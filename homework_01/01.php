@@ -1,9 +1,8 @@
 <?php
 require 'readline.php';
 
-// Да се поиска от потребителя да въведе 3 числа A, В и С (може да са с
-// 		плаваща запетая) от конзолата.
-// 		Да се изведе подходящо съобщение за това дали C е между A и B.
+// 		da se poiska ot potrebitelq da vuvede 3 4isla A, В i С (moje da sa s plava6ta zapetaq) ot konzolata.
+// 		da se izvede dali C e mejdu A i B.
 
 
 

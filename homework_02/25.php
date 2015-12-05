@@ -1,0 +1,25 @@
+<?php
+require_once 'readline.php';
+
+// Задача 25:
+// Да се направи програма, която по дадено число N, да изчислява
+// N!, т.е. 1*2*3*4...*N.
+// Пример: 5
+// Изход: 120
+// Използвайте цикъл do-while.
+
+
+$n = readline('enter number: ');
+
+$count = 0;
+
+$result = 1;
+
+do{
+	$count++;
+	
+	$result *= $count;
+	
+}while ($count != $n);
+
+echo $result;

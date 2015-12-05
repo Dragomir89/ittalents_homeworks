@@ -1,0 +1,53 @@
+<?php
+// Задача 5:
+// Да се състави програма, при която предварително са въведени
+// естествени числа в двумерен масив 4*4 елемента.
+// Програмата да извежда резултат от проверката какво е съотношението
+// на най-голямата сума по редове спрямо най-голямата сума по колони.
+
+
+$arr1 = [
+		[1,2,3,4],
+		[5,6,7,8],
+		[9,10,11,12],
+		[13,14,15,16]
+];
+$maxSumRow = 0;
+$maxSumCol = 0;
+
+
+$len = count($arr1);
+
+
+for ($i = 0; $i < $len; $i++) {
+	
+	$currentRow = 0;
+	$currentCol = 0;
+	
+	for ($j = 0; $j < $len; $j++) {
+		
+		$currentRow += $arr1[$i][$j];
+		$currentCol += $arr1[$j][$i];
+		
+	}
+	
+	$maxSumRow = $maxSumRow < $currentRow ? $currentRow : $maxSumRow;
+	
+	$maxSumCol = $maxSumCol < $currentCol ? $currentCol : $maxSumCol;
+
+}
+        
+echo 'най-голяма сума по редове e ' . $maxSumRow . PHP_EOL;        
+
+echo 'най-голяма сума по колони e ' . $maxSumCol . PHP_EOL;
+        
+if ($maxSumRow > $maxSumCol) {
+	echo 'Максималната сума по редове е > от максималната сума по колони';
+}
+else {
+	echo 'Максималната сума по колони е > от максималната сума по редове';
+}
+        
+        
+        
+        

@@ -1,0 +1,21 @@
+<?php
+
+
+function multiplyBySum($x , $y) {
+	
+	$result = 0
+	
+	for ($i = 0; $i < $y; $i++) {
+		
+		$result += $x;
+		
+		echo $x , PHP_EOL;
+		
+	};
+	
+	
+	return $result;
+	
+}
+
+var_dump(multiplyBySum(3, 5));

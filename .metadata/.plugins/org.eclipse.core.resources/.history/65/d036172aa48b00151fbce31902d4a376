@@ -1,0 +1,31 @@
+<?php
+// Задача 2:
+// Да се състави програма, чрез която от клавиатурата се въвеждат
+// последователно две думи с дължина 10-20 знака.
+// Програмата да размени първите им 5 знака и да изведе дължината на
+// по-дългата, както и новото им съдържание.
+// Пример: uchilishe uchenik
+// Изход: 9 uchenishe
+require_once 'readline.php';
+
+
+$str1 = 'uchilishte';
+$str2 = 'uchenik';
+
+
+$len1 = strlen($str1);
+$len2 = strlen($str2);
+
+if ($len1 < $len2) {
+	
+	$str = $str1;
+	
+	$str1 = $str2;
+	$str2 = $str1;
+}
+
+echo mb_substr($str1, 3,5, 'UTF-8');
+
+//$str1 = substr($str1, 5);
+
+echo $str1;

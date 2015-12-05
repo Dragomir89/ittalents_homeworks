@@ -1,0 +1,23 @@
+<?php
+$n = 123;
+
+
+function isPrime($n) {
+	
+	$temp = $n - 1;
+	
+	echo $temp , PHP_EOL;
+	
+	if ($n == 1) {
+		return false;
+	};
+	if ($n % $temp == 0) {
+		return true;
+	}
+	
+	isPrime($n - 1);
+}
+
+
+
+var_dump(isPrime($n));

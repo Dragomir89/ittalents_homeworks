@@ -1,0 +1,6 @@
+<?php
+$arr = [1,2,3,4];
+
+$x = isset($arr[2]);
+
+var_dump($x);

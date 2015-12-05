@@ -1,0 +1,16 @@
+<?php
+// Задача 4:
+// Да се състави програма, чрез която по въведени трите имена на двама
+// човека разделени със запетая, се извежда чие име има по-голям сбор
+// от ASCII кодовете на съставящите името букви.
+// Пример: Anna Dosewa Asenowa, Iwo Peew Peew
+// Изход: Anna Dosewa Asenowa
+
+$name1 = 'Anna Dosewa Asenowa';
+$name2 = 'Iwo Peew Peew';
+
+
+$a = mb_convert_encoding('a', 'UTF-8');
+$a = ord('a');
+echo $a;
+

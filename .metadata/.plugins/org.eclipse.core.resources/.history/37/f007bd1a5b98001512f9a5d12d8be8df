@@ -1,0 +1,17 @@
+<?php
+$n = 123;
+
+
+function isPrime($n) {
+	
+	$temp = $n - 1;
+	
+	if ($n == 1) {
+		return false;
+	};
+	if ($n % $temp == 0) {
+		return true;
+	}
+	
+	isPrime($n - 1);
+}

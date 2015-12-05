@@ -1,0 +1,25 @@
+<?php
+$str1 = '1234';
+
+$str2 = '635';
+
+
+$len1 = mb_strlen($str1);
+$numb1 = '';
+
+$len2 = mb_strlen($str2);
+$numb2 = '';
+
+for ($i = 0; $i < $len1; $i++) {
+	if ($i % 2 == 0) {
+		$numb1 .= $str1[$i];
+	}
+}
+
+for ($i = 0; $i < $len2; $i++) {
+	if ($i % 2 == 0) {
+		$numb2 .= $str2[$i];
+	}
+}
+
+echo $numb1;

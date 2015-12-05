@@ -1,0 +1,79 @@
+<?php
+// Напишете програма, която намира и извежда най-дългата редица от
+// еднакви поредни елементи в даден масив.
+
+
+
+
+$arr = [2,1,1,2,3,3,2,2,2,1];
+
+$counter = 1;
+$maxLenght = 0;
+$num = $arr[0];
+
+$len = count($arr);
+
+for ($i = 1; $i < $len; $i++) {
+	
+	if ($arr[$i] == $arr[$i - 1]){
+	 		$counter++;
+	 	}
+	 	else{
+	 		if ($counter >= $maxLength){
+	 			$maxLength = $counter;
+	 			$num = $arr[$i - 1];
+	 			$counter = 1;
+	 		}
+	 	}
+}
+
+ if ($counter >= $maxLength){
+	$maxLength = $counter;
+	$num = $arr[$len - 1];
+	$counter = 1;
+}
+
+	 
+	 
+	 
+	 
+
+echo "$num  $maxLenght";
+
+
+// int[] arr = { 2, 2, 2, 3, 4, 3, 3, 3, 3 };
+
+// int counter = 1; // 4
+// int maxLength = 0; // 4
+// int num = arr[0];  // 3
+
+
+// for (int i = 1; i < arr.Length; i++)
+// {
+// 	if (arr[i] == arr[i - 1])
+// 	{
+// 		counter++;
+// 	}
+// 	else{
+// 		if (counter >= maxLength)
+// 		{
+// 			maxLength = counter;
+// 			num = arr[i - 1];
+// 			counter = 1;
+// 		}
+// 	}
+// }
+
+// if (counter >= maxLength)
+// {
+// 	maxLength = counter;
+// 	num = arr[arr.Length-1];
+// 	counter = 1;
+// }
+
+// Console.WriteLine(maxLength + " " + num);
+// Console.ReadLine();
+
+// }
+// }
+// }

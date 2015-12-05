@@ -1,0 +1,22 @@
+<?php
+require_once 'readline.php';
+
+// «адача 1:
+// ƒа се прочете масив и да се намери най-малкото число кратно на
+// 3 от масива.
+
+
+$arr = [10, 3, 5, 8, 6, -3, 7];
+
+$len = count($arr);
+
+$min = PHP_INT_MAX;
+
+for ($i = 0; $i < $len; $i++) {
+	 
+	if ($arr[$i] < $min) {
+		$min = $arr[$i];
+	}
+	
+}
+echo $min;

@@ -1,0 +1,15 @@
+<?php
+
+
+function multiplyBySum($x , $y) {
+	
+	for ($i = 0; $i < $y - 3; $i++) {
+		$x += $x;
+	};
+	
+	
+	return $x;
+	
+}
+
+var_dump(multiplyBySum(3, 5));

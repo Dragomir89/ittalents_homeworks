@@ -1,0 +1,7 @@
+<?php
+$str1 = '1234';
+
+$str2 = '635';
+
+
+echo mb_strlen($str1);

@@ -1,0 +1,22 @@
+<?php
+
+
+function multiplyBySum($x , $y) {
+	
+	$result = 0;
+	
+	$min = min($x , $y);
+	$max = max($x, $y);
+	
+	for ($i = 0; $i < $min; $i++) {
+		
+		$result += $max;
+		
+	};
+	
+	
+	return $result;
+	
+}
+
+var_dump(multiplyBySum(3, 5));
